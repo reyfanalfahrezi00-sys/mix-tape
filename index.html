@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs for You</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SCREEN 1: ENVELOPE -->
+  <section id="screen-envelope" class="screen active">
+    <div class="envelope-wrapper" id="envelope-btn">
+      <div class="envelope-css">
+        <div class="envelope-flap"></div>
+        <div class="envelope-pocket"></div>
+        <div class="envelope-seal">🌸</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2: FLOWER ANIMATION -->
+  <section id="screen-flowers" class="screen">
+    <div class="flower-container" id="flower-container"></div>
+  </section>
+
+  <!-- SCREEN 3: MAIN MIXTAPE PAGE -->
+  <section id="screen-main" class="screen">
+    <div class="bg-flowers-overlay"></div>
+
+    <div class="main-container">
+
+      <!-- MAIN CARD TAPE -->
+      <div class="mixtape-card">
+        <div class="card-header">
+          <p class="subtitle">FOR YOU · FROM ME</p>
+          <h1 class="title">Songs for you</h1>
+        </div>
+
+        <!-- CASSETTE DISPLAY (PURE CSS) -->
+        <div class="cassette-container">
+          <div class="cassette-css" id="cassette-body">
+            <div class="cassette-label">
+              <span class="cassette-title">Songs for you 🌸</span>
+            </div>
+            <div class="wheels">
+              <div class="wheel wheel-left"></div>
+              <div class="wheel wheel-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOWER SECTION: PLAYLIST & NOTE -->
+        <div class="card-bottom">
+          <!-- PLAYLIST -->
+          <div class="playlist">
+            <div class="track-item" data-audio="assets/you.mp3" data-yt="HEAn4FqXFY4" data-title="You - LANY">
+              <div class="track-info">
+                <span class="track-num">01</span>
+                <span class="track-title">You</span>
+                <span class="track-artist">LANY</span>
+              </div>
+              <button class="play-btn">▶</button>
+            </div>
+
+            <div class="track-item" data-audio="assets/perfect.mp3" data-yt="2Vv-BfVoq4g" data-title="Perfect - Ed Sheeran">
+              <div class="track-info">
+                <span class="track-num">02</span>
+                <span class="track-title">Perfect</span>
+                <span class="track-artist">Ed Sheeran</span>
+              </div>
+              <button class="play-btn">▶</button>
+            </div>
+
+            <div class="playing-status" id="playing-status">Select a song...</div>
+          </div>
+
+          <!-- STICKY NOTE -->
+          <div class="sticky-note">
+            <p class="note-greeting">Hey you,</p>
+            <p class="note-body">I made you a mixtape — the cassette kind, not a CD player. Side A is us laughing. Side B is me missing you already.</p>
+            <p class="note-footer">Press play.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FLOATING YOUTUBE BUBBLE -->
+      <div id="yt-bubble" class="yt-bubble hidden">
+        <div class="yt-header">
+          <span id="yt-now-playing">Now Playing Video</span>
+          <button id="close-yt-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="iframe-container">
+          <iframe id="yt-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <audio id="audio-player"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
