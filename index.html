@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs for You</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SCREEN 1: AMPLOP -->
+  <section id="screen-envelope" class="screen active">
+    <div class="envelope-wrapper" id="envelope-btn">
+      <div class="envelope">
+        <div class="flap"></div>
+        <div class="pocket"></div>
+        <div class="letter">
+          <div class="stamp">🌸</div>
+        </div>
+      </div>
+      <p class="click-hint">Click to open 🌸</p>
+    </div>
+
+    <div class="bottom-widgets">
+      <div class="widget-pink">💖 There's more here</div>
+      <div class="widget-green">Help</div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2: ANIMASI BUNGA -->
+  <section id="screen-flowers" class="screen">
+    <div class="flower-bloom-container" id="flower-container"></div>
+    <div class="bottom-widgets">
+      <div class="widget-pink">💖 There's more here</div>
+      <div class="widget-green">Help</div>
+    </div>
+  </section>
+
+  <!-- SCREEN 3: ROOM, CASSETTE & BUBBLE YT -->
+  <section id="screen-main" class="screen">
+    
+    <div class="room-bg">
+      <div class="room-wall"></div>
+      <div class="room-window">
+        <div class="curtain left"></div>
+        <div class="curtain right"></div>
+      </div>
+      <div class="room-shelf">
+        <div class="plant-pot">🌱</div>
+      </div>
+    </div>
+
+    <!-- WRAPPER LAYOUT UTAMA -->
+    <div class="layout-wrapper">
+      
+      <!-- BUBBLE YOUTUBE DI KIRI -->
+      <div id="yt-bubble" class="yt-bubble hidden">
+        <div class="yt-header">
+          <span id="yt-now-playing">Playing Video...</span>
+          <button id="close-yt-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="iframe-container">
+          <iframe id="yt-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- KARTU CASSETTE DI KANAN -->
+      <div class="mixtape-card">
+        <div class="card-header">
+          <p class="subtitle">FOR SAM · FROM ALEX</p>
+          <h1 class="title">Songs for you</h1>
+        </div>
+
+        <div class="cassette-container">
+          <div class="cassette-svg-body" id="cassette-body">
+            <div class="cassette-label-art">
+              <span class="cassette-text">Songs for you 🌸</span>
+            </div>
+            <div class="cassette-wheels">
+              <div class="wheel left-wheel"></div>
+              <div class="wheel right-wheel"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLAYLIST DENGAN LINK YT LU -->
+        <div class="card-body">
+          <div class="playlist-section">
+            
+            <!-- TRACK 1: LANY - YOU -->
+            <div class="track-item" data-yt="HEAn4FqXFY4" data-title="You - LANY">
+              <div class="track-info">
+                <span class="track-num">01</span>
+                <span class="track-title">You</span>
+                <span class="track-artist">LANY</span>
+              </div>
+              <button class="play-btn">▶</button>
+            </div>
+
+            <!-- TRACK 2: ED SHEERAN - PERFECT -->
+            <div class="track-item" data-yt="2Vv-BfVoq4g" data-title="Perfect - Ed Sheeran">
+              <div class="track-info">
+                <span class="track-num">02</span>
+                <span class="track-title">Perfect</span>
+                <span class="track-artist">Ed Sheeran</span>
+              </div>
+              <button class="play-btn">▶</button>
+            </div>
+
+            <p class="status-text" id="playing-status">Press play.</p>
+          </div>
+
+          <div class="note-section">
+            <p class="note-head">Hey you,</p>
+            <p class="note-text">I made you a mixtape — the cassette kind, not a CD player. Side A is us laughing. Side B is me missing you already.</p>
+            <p class="note-foot">Press play.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom-widgets">
+      <div class="widget-pink">💖 There's more here</div>
+      <div class="widget-green">Help</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+                            </html>
+                            
